@@ -23,11 +23,12 @@ python manage.py createsuperuser
 * You may create normal user for testing the app, however, admin is also fine.
 
 * Create Tier objects in admin for 3 plans:
-** Basic, name=”basic”, Thumbnail size = 200
-** Premium, name=”premium”, Thumbnail size = 200, 400, link_orig = True
-** Enterprise, name=”enterprise”, Thumbnail size = 200, 400, link_orig = True, link_expir = True
+  * Basic, name=”basic”, Thumbnail size = 200
+  * Premium, name=”premium”, Thumbnail size = 200, 400, link_orig = True
+  * Enterprise, name=”enterprise”, Thumbnail size = 200, 400, link_orig = True, link_expir = True
 
 ## Summary
 
 Time necessary to prepare this simple app was around 3 working days.
+
 Please consider that up to now I’ve worked in a clean Django and I don’t have experience with the REST framework. The most time consuming for me was to prepare tests, which are not perfect and should be improved.
