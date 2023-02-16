@@ -23,9 +23,11 @@ python manage.py createsuperuser
 * You may create normal user for testing the app, however, admin is also fine.
 
 * Create Tier objects in admin for 3 plans:
-  * Tier.objects.create(name="basic", thumbnail_size="200")
-  * Tier.objects.create(name="premium", thumbnail_size="200, 400", link_orig=True)
-  * Tier.objects.create(name="enterprise", thumbnail_size="200, 400", link_orig=True, link_expir=True)
+```python
+Tier.objects.create(name="basic", thumbnail_size="200")
+Tier.objects.create(name="premium", thumbnail_size="200, 400", link_orig=True)
+Tier.objects.create(name="enterprise", thumbnail_size="200, 400", link_orig=True, link_expir=True)
+```
 
 ## Summary
 
