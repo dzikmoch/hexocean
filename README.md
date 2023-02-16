@@ -25,8 +25,8 @@ python manage.py createsuperuser
 
 * Create Tier objects for 3 plans:
 ```python
-Tier.objects.create(name="basic", thumbnail_size="200")
-Tier.objects.create(name="premium", thumbnail_size="200, 400", link_orig=True)
+Tier.objects.create(name="basic", thumbnail_size="200", link_orig=False, link_expir=False)
+Tier.objects.create(name="premium", thumbnail_size="200, 400", link_orig=True, link_expir=False)
 Tier.objects.create(name="enterprise", thumbnail_size="200, 400", link_orig=True, link_expir=True)
 ```
 * In django-admin, go to the user object which you will use for the testing purpose. At the section "user profile" at end, assign one of the above tier.
