@@ -18,7 +18,7 @@ DEBUG=True
 docker-compose up
 
 * Create django superuser:
-```python
+```bash
 python manage.py createsuperuser
 ```
 * You may create normal user for testing the app, however, admin is also fine.
