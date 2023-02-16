@@ -12,6 +12,7 @@ To run this project, please follow the steps below:
 * Prepare .env file in the main directory consisting:
 
 SECRET_KEY=!!!ENTER_YOUR_SECRET_KEY!!!
+
 DEBUG=True
 
 *  Install docker composer and run command:
