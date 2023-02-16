@@ -15,8 +15,14 @@ SECRET_KEY=!!!ENTER_YOUR_SECRET_KEY!!!
 DEBUG=True
 ```
 *  Install docker composer and run command:
+```bash
 docker-compose up
-
+```
+*  Apply migrations:
+```python
+python manage.py makemigrations
+python manage.py migrate
+```
 * Create django superuser:
 ```bash
 python manage.py createsuperuser
