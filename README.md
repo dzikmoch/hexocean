@@ -22,12 +22,14 @@ python manage.py createsuperuser
  
 * You may create normal user for testing the app, however, admin is also fine.
 
-* Create Tier objects in admin for 3 plans:
+* Create Tier objects for 3 plans:
 ```python
 Tier.objects.create(name="basic", thumbnail_size="200")
 Tier.objects.create(name="premium", thumbnail_size="200, 400", link_orig=True)
 Tier.objects.create(name="enterprise", thumbnail_size="200, 400", link_orig=True, link_expir=True)
 ```
+* In django-admin, go to the user object which you will use for the testing purpose. At the section "user profile" at end, assign one of the above tier.
+* You are ready to start testing the project. Go to http://0.0.0.0:8000 
 
 ## Summary
 
